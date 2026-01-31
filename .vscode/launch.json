@@ -1,0 +1,39 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "运行MCP服务器",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/demo.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        },
+        {
+            "name": "使用MCP CLI运行",
+            "type": "python",
+            "request": "launch",
+            "program": "mcp",
+            "args": ["run", "${workspaceFolder}/demo.py"],
+            "console": "integratedTerminal",
+            "justMyCode": false
+        },
+        {
+            "name": "调试模式运行",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/demo.py",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "stopOnEntry": false,
+            "args": [],
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}",
+                "PYTHONBREAKPOINT": "ipdb.set_trace"
+            }
+        }
+    ]
+}

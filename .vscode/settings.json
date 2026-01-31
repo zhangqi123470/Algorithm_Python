@@ -1,0 +1,24 @@
+{
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": [
+                    "source",
+                    "variable",
+                    "constant",
+                    "keyword",
+                    "storage",
+                    "type",
+                    "string",
+                    "comment",
+                    "punctuation",
+                    "entity"
+                ],
+                "settings": {
+                    "foreground": "#D4D4D4" // 设置为你喜欢的统一颜色，比如浅灰
+                }
+                
+            }
+        ]
+    }
+}
