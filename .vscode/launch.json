@@ -2,10 +2,10 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "运行MCP服务器",
+            "name": "demo",
             "type": "python",
             "request": "launch",
-            "program": "${workspaceFolder}/demo.py",
+            "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": false,
             "env": {
